@@ -14,6 +14,7 @@
 		20B339682453A70C0028781B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20B339672453A70C0028781B /* Assets.xcassets */; };
 		20B3396B2453A70C0028781B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20B339692453A70C0028781B /* LaunchScreen.storyboard */; };
 		20B339762453A70C0028781B /* TouchDeliveryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B339752453A70C0028781B /* TouchDeliveryTests.swift */; };
+		5DD18507A90C6EC3C0F972DC /* Pods_TouchDelivery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DFE94FA0FEEABA834AFBD5B /* Pods_TouchDelivery.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		13FED6921C17C870C89A31D8 /* Pods-TouchDelivery.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TouchDelivery.debug.xcconfig"; path = "Target Support Files/Pods-TouchDelivery/Pods-TouchDelivery.debug.xcconfig"; sourceTree = "<group>"; };
 		20B3395B2453A7070028781B /* TouchDelivery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TouchDelivery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20B3395E2453A7070028781B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20B339602453A7070028781B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +40,8 @@
 		20B339712453A70C0028781B /* TouchDeliveryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TouchDeliveryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		20B339752453A70C0028781B /* TouchDeliveryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchDeliveryTests.swift; sourceTree = "<group>"; };
 		20B339772453A70C0028781B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DFE94FA0FEEABA834AFBD5B /* Pods_TouchDelivery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TouchDelivery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0F2D075903C39C82AAD4030 /* Pods-TouchDelivery.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TouchDelivery.release.xcconfig"; path = "Target Support Files/Pods-TouchDelivery/Pods-TouchDelivery.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DD18507A90C6EC3C0F972DC /* Pods_TouchDelivery.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +69,8 @@
 				20B3395D2453A7070028781B /* TouchDelivery */,
 				20B339742453A70C0028781B /* TouchDeliveryTests */,
 				20B3395C2453A7070028781B /* Products */,
+				B6CA3CC9A6240B153E52FD53 /* Pods */,
+				3334AB519DC98439E0A362D9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +106,24 @@
 			path = TouchDeliveryTests;
 			sourceTree = "<group>";
 		};
+		3334AB519DC98439E0A362D9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8DFE94FA0FEEABA834AFBD5B /* Pods_TouchDelivery.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B6CA3CC9A6240B153E52FD53 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				13FED6921C17C870C89A31D8 /* Pods-TouchDelivery.debug.xcconfig */,
+				A0F2D075903C39C82AAD4030 /* Pods-TouchDelivery.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,9 +131,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 20B3397A2453A70C0028781B /* Build configuration list for PBXNativeTarget "TouchDelivery" */;
 			buildPhases = (
+				A7C5AB5A081ACDBCE1AE1167 /* [CP] Check Pods Manifest.lock */,
 				20B339572453A7070028781B /* Sources */,
 				20B339582453A7070028781B /* Frameworks */,
 				20B339592453A7070028781B /* Resources */,
+				945E23922E4331B3227AFB50 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -194,6 +221,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		945E23922E4331B3227AFB50 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TouchDelivery/Pods-TouchDelivery-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TouchDelivery/Pods-TouchDelivery-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TouchDelivery/Pods-TouchDelivery-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A7C5AB5A081ACDBCE1AE1167 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TouchDelivery-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		20B339572453A7070028781B /* Sources */ = {
@@ -360,6 +429,7 @@
 		};
 		20B3397B2453A70C0028781B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13FED6921C17C870C89A31D8 /* Pods-TouchDelivery.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -378,6 +448,7 @@
 		};
 		20B3397C2453A70C0028781B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0F2D075903C39C82AAD4030 /* Pods-TouchDelivery.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
